@@ -9,18 +9,18 @@ public class Main {
 
         char[] firstPart = new char[letters.length / 2];
 
-        char[] secondPart = new char[letters.length / 2];
+        char[] secondPart = new char[letters.length - firstPart.length];
 
 
         for (int i = 0; i < letters.length; i++) {
 
             if (i < letters.length / 2) {
 
-                firstPart[i] = charArray[i];
+                firstPart[i] = letters[i];
 
             } else {
 
-                secondPart[i - string.length / 2] = charArray[i];
+                secondPart[i - string.length() / 2] = letters[i];
 
             }
 
